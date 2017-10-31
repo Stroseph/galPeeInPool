@@ -1,0 +1,25 @@
+// https://www.youtube.com/watch?v=S32y9aYEzzo
+
+// I got the idea to write this from the youTube video above on a fun way to calculate the amount of pee in your pool by the end of the summer.
+
+#include <stdio.h>
+
+
+int main ()
+{
+	float swimmerPerDay;
+	float peePerPerson;
+	float galOfPee;
+	
+	printf("Please enter Swimmers Per Day:");
+	scanf("%f", &swimmerPerDay);
+	printf("Please enter Pee Per Person:");
+	scanf("%f", &peePerPerson);
+	
+	printf ("\nNumber of Swimmers are %f, and Pee Per Swimmer is %f\n", swimmerPerDay, peePerPerson);
+	printf(".. EWWWW...calculating pleas wait ...YUCK.. \n");
+	galOfPee = (swimmerPerDay * peePerPerson);
+	printf ("Gallons of Pee in Your Pool %.3f\n", galOfPee); // %.3f means to print area as a floating point decimal with a precision of at least 3 digits.
+	
+	return 0;
+}
